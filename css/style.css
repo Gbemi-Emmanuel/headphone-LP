@@ -1,0 +1,215 @@
+:root {
+    --brand-color: #14A4F5;
+    --brand-color2: #002E79;
+    --white: #fff;
+    --black: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+   
+}
+body{
+    overflow: hidden;
+}
+.landing-page {
+    width: 100%;
+    height: 42rem;
+    /* background: url(../img/headphone.png) center , radial-gradient(circle, var(--brand-color) 5%, var(--brand-color2)); */
+      background-size: cover;
+      background-repeat: no-repeat;
+    background: radial-gradient(circle, var(--brand-color) -50%, var(--brand-color2) 60%);
+    /* background:  var(--brand-color2); */
+    color: var(--white);
+    overflow: hidden;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 99;
+}
+.navbar .menu{
+    margin-right: 20%;
+    cursor: pointer;
+    z-index: 99;
+}
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: transparent;
+}
+
+li {
+float: left;
+padding: 0px 25px;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 400;
+font-size: 18px;
+cursor: pointer;
+position: relative;
+padding-bottom: 5px;
+z-index: 99;
+}
+li a:hover::after{
+    width: 90%;
+    transition: .5s ease-out;
+
+}
+li a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background: var(--brand-color); 
+    width: 0%;
+    height: 3px;
+}
+.navbar .cart{
+    margin: 0px 25px;
+    margin-left: 18%;
+    cursor: pointer;
+    z-index: 99;
+}
+.navbar .search{
+    margin: 0px 25px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+
+
+.content{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+.left-text h1{
+    font-size: 70px;
+    z-index: 30;
+}
+.left-text h2{
+    font-size: 40px;
+    margin-top: -20px;
+    z-index: 30;
+}
+.left-text .music{
+    color: var(--brand-color);
+}
+.left-text h3{
+   font-size: 35px;
+   font-weight: 400;
+   z-index: 30;
+}
+.left-text p{
+   font-size: 19px;
+   font-weight: 300;
+   z-index: 30;
+}
+.left-text .amount{
+   font-size: 35px;
+   font-weight: 500;
+   padding: 15px 0px;
+}
+.left-text .buyBtn{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    background: var(--brand-color);
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 40px;
+    z-index: 30;
+    cursor: pointer;
+}
+.left-text .social-icons > *{
+    margin-top: 8.5%;
+    margin-right: 7%;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+.left-text .social-icons > *:hover{
+    transform: translateY(-15px);
+}
+
+.right-side .right-text{
+    margin-top: 20px;
+    position: absolute;
+    right: 7%;
+    z-index: 6;
+}
+
+.content .headphone{
+    position: absolute;
+    top: 1%;
+    left: 36%;
+    width: 800px;
+    height: 700px;
+    z-index: 55;
+}
+
+.content .bigCircle{
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: var(--brand-color2);
+    z-index: 2;
+    left: 53%;
+    top: 30%;
+    z-index: 10;
+}
+
+.content .smallCircle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: 68%;
+    top: 45%;
+    background: var(--brand-color);
+    opacity: 0.3;
+    z-index: 20;
+    box-shadow: 0px 0px 20px var(--black);
+}
+
+.content .side-image{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    /* left: 18%;
+    top: 5%; */
+    left: 75%;
+    bottom: 0%;
+    z-index: 10;
+}
+.slantRectangle{
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    width: 100px;
+    height: 1000px;
+    background: var(--brand-color2);
+    border-radius: 50px;
+    transform: rotate(110deg);
+    z-index: 2;
+    box-shadow: 5px 0px 20px -10px var(--black);
+}
