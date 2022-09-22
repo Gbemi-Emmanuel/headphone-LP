@@ -13,6 +13,7 @@
 }
 body{
     overflow: hidden;
+    background: radial-gradient(circle, var(--brand-color) -50%, var(--brand-color2) 60%);
 }
 .landing-page {
     width: 100%;
@@ -20,7 +21,6 @@ body{
     /* background: url(../img/headphone.png) center , radial-gradient(circle, var(--brand-color) 5%, var(--brand-color2)); */
       background-size: cover;
       background-repeat: no-repeat;
-    background: radial-gradient(circle, var(--brand-color) -50%, var(--brand-color2) 60%);
     /* background:  var(--brand-color2); */
     color: var(--white);
     overflow: hidden;
@@ -212,4 +212,5 @@ li a::after{
     transform: rotate(110deg);
     z-index: 2;
     box-shadow: 5px 0px 20px -10px var(--black);
+    z-index: -1;
 }
